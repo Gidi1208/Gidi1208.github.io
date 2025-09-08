@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cake Shop Order</title>
+    <link rel="stylesheet" href="cakeorder.css" />
+</head>
+<body>
+    <header>
+        <h1>CAKE SHOP</h1>
+    </header>
+    <section class="cake-gallery">
+        <div class="cake-item">
+            <img src="rainbow_cake.jpg" alt="Rainbow Cake" />
+            <p><strong>Rainbow Cake – Rs. 300</strong></p>
+        </div>
+        <div class="cake-item">
+            <img src="chocolate_cake.jpg" alt="Chocolate Cake" />
+            <p><strong>Chocolate Cake – Rs. 200</strong></p>
+        </div>
+        <div class="cake-item">
+            <img src="redvelvet_cake.jpg" alt="Red Velvet Cake" />
+            <p><strong>Red Velvet Cake – Rs. 250</strong></p>
+        </div>
+        <div class="cake-item">
+            <img src="blackforest_cake.webp" alt="Black Forest Cake" />
+            <p><strong>Black Forest Cake – Rs. 350</strong></p>
+        </div>
+    </section>
+    <section class="order-section">
+        <h2>Order Cake</h2>
+        <form id="orderForm">
+            <label for="rainbowQty">Rainbow Cake (Quantity)</label>
+            <input type="number" id="rainbowQty" name="rainbowQty" min="0" value="0" />
+            <label for="chocolateQty">Chocolate Cake (Quantity)</label>
+            <input type="number" id="chocolateQty" name="chocolateQty" min="0" value="0" />
+            <label for="redvelvetQty">Red Velvet Cake (Quantity)</label>
+            <input type="number" id="redvelvetQty" name="redvelvetQty" min="0" value="0" />
+            <label for="blackforestQty">Black Forest Cake (Quantity)</label>
+            <input type="number" id="blackforestQty" name="blackforestQty" min="0" value="0" />
+            <button type="button" id="placeOrderBtn">Place Order</button>
+        </form>
+        <div id="billSection" class="bill-section" style="display:none;">
+            <h3>Purchase Order Bill!!</h3>
+            <p id="totalPrice"></p>
+        </div>
+    </section>
+    <script src="cakeorder.js"></script>
+</body>
+</html>
