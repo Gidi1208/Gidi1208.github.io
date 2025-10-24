@@ -1,0 +1,45 @@
+/* Budget Calculator styles */
+:root{
+  --bg:#f4f4f4;
+  --accent:#1e4ea0;
+}
+*{box-sizing:border-box}
+body{
+  font-family:Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  margin:0;
+  color:#222;
+}
+.banner{
+  background:#000;
+  color:#fff;
+  padding:18px 10px;
+  text-align:center;
+}
+.banner h1{margin:0;font-size:28px;font-weight:700}
+.container{max-width:980px;margin:28px auto;padding:18px}
+.input-area{background:#fff;padding:26px;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.label-center{display:block;text-align:center;margin-bottom:12px;font-weight:600}
+.amount-row{display:flex;justify-content:center;margin-bottom:18px}
+#amount{width:180px;padding:8px;border:1px solid #ccc;border-radius:4px;text-align:center}
+.sub{text-align:center;margin:6px 0 14px;color:#444}
+.perc-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
+.perc-row label{display:flex;align-items:center;gap:8px;font-size:14px}
+.perc-row input{width:68px;padding:6px;border:1px solid #cfcfcf;border-radius:4px}
+.btn-row{display:flex;justify-content:center;margin-bottom:20px}
+.btn-primary{background:#2d6cdf;color:#fff;padding:10px 18px;border:0;border-radius:6px;cursor:pointer;font-weight:600}
+.btn-primary:hover{opacity:0.95}
+.results{display:flex;gap:18px;flex-wrap:wrap;margin-top:14px;justify-content:center}
+.card{min-width:200px;padding:18px;border-radius:8px;color:#fff;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+.card-title{font-weight:700;margin-bottom:10px}
+.card-amount{font-size:18px;font-weight:700}
+.card-blue{background:#1e4ea0}
+.card-green{background:#357a3b}
+.card-teal{background:#2b86b4}
+.card-pink{background:#c33a5b}
+
+@media (max-width:720px){
+  .perc-row label{width:48%;justify-content:space-between}
+  .results{flex-direction:column;align-items:stretch}
+  .card{width:100%}
+}

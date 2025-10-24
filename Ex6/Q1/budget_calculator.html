@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Budget Calculator App</title>
+  <link rel="stylesheet" href="budget.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header class="banner">
+    <h1>Budget Calculator App</h1>
+  </header>
+
+  <main class="container">
+    <section class="input-area">
+      <label class="label-center">Enter Amount that you want to Manage</label>
+      <div class="amount-row">
+        <input id="amount" type="number" min="0" placeholder="15000" value="15000">
+      </div>
+
+      <p class="sub">How would you like to divide your money?</p>
+
+      <div class="perc-row">
+        <label>Room Rent(%) <input id="rentPerc" type="number" min="0" value="35"></label>
+        <label>Accessories(%) <input id="accPerc" type="number" min="0" value="15"></label>
+        <label>Emergency(%) <input id="emPerc" type="number" min="0" value="20"></label>
+        <label>Saving(%) <input id="savPerc" type="number" min="0" value="30"></label>
+      </div>
+
+      <div class="btn-row">
+        <button id="evaluateBtn" class="btn-primary">Evaluate My Money</button>
+      </div>
+    </section>
+
+    <section class="results" aria-live="polite">
+      <div class="card card-blue">
+        <div class="card-title">Room Rent</div>
+        <div class="card-amount" id="rentAmt">Rs.0.00</div>
+      </div>
+      <div class="card card-green">
+        <div class="card-title">Accessories</div>
+        <div class="card-amount" id="accAmt">Rs.0.00</div>
+      </div>
+      <div class="card card-teal">
+        <div class="card-title">Emergency</div>
+        <div class="card-amount" id="emAmt">Rs.0.00</div>
+      </div>
+      <div class="card card-pink">
+        <div class="card-title">Saving</div>
+        <div class="card-amount" id="savAmt">Rs.0.00</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="budget.js"></script>
+</body>
+</html>
